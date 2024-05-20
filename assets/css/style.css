@@ -1,5 +1,6 @@
 :root {
     --color-principal:#b78756;
+    --max-width: 1140px;
 }
 
 * {
@@ -11,6 +12,7 @@
 body {
     font-family: 'Montserrat';
     font-size: 13px;
+    overflow-x: hidden;
 }
 
 header {
@@ -20,7 +22,7 @@ header {
 }
 
 .header-content {
-    max-width: 1140px;;
+    max-width: var(--max-width);
     height: 100px;
     margin: auto;
     display: flex;
@@ -56,7 +58,7 @@ header {
 
 .menu li a{
     color: #fff;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
     padding-right: 10px;
@@ -71,6 +73,18 @@ header {
 .menu li .active {
     border-bottom: 5px solid var(--color-principal);
     color: #CCC;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 30px;
+    background-color: var(--color-principal);
+    border-radius: 20px;
 }
 
 .banner {
@@ -117,18 +131,6 @@ header {
     text-transform: uppercase;
 }
 
-.banner a {
-    display: block;
-    padding: 10px 30px;
-    font-size: 12px;
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    margin-top: 30px;
-    background-color: var(--color-principal);
-    border-radius: 20px;
-}
-
 .banner .slider-pointers {
     width: 100vw;
     height: 20px;
@@ -151,4 +153,94 @@ header {
 
 .banner .pointer.active {
     background-color: var(--color-principal);
+}
+
+.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.default .section-title {
+    font-size: 20px;
+}
+
+.default .section-desc {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #CCC;
+}
+
+.default .section-body {
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+.default.light {
+    background-color: #f7f7f7;
+}
+
+.default.light .section-title,
+.default.light .section-body{
+    color: #000;
+}
+
+.default.dark {
+    background-color: #000;
+}
+
+.default.dark .section-title,
+.default.dark .section-body{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    CSS PARA AREAS ESPECIFICAS DO SITE
+*/
+
+.section-aboutus {
+    display: flex;
+}
+
+.section-aboutus--left {
+    flex: 1;
+}
+
+.section-aboutus--left p {
+    font-size: 14px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.section-aboutus--right {
+    width: 520px;
+    text-align: center;
+}
+
+.section-aboutus--right img {
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
 }
