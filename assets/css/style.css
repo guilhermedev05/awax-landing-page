@@ -191,6 +191,9 @@ header {
     CSS PARA AREAS ESPECIFICAS DO SITE
 */
 
+
+/* SECTION ABOUT US */
+
 .section-aboutus {
     display: flex;
 }
@@ -210,6 +213,9 @@ header {
     width: 480px;
     box-shadow: 0px 5px 10px #333;
 }
+
+/* SECTION SERVICES */
+
 .section-services {
     display: flex;
     text-align: center;
@@ -232,6 +238,9 @@ header {
     color: #999;
     margin-top: 10px;
 }
+
+/* SECTION PROJECTS */
+
 .section-projects {
     display: flex;
     align-items: center;
@@ -308,4 +317,18 @@ header {
 .section-projects--photoarea img {
     width: inherit;
     height: inherit;
+}
+
+/* SECTION TEAM */
+
+.bgteam {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.section-team-area {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px 0;
 }
