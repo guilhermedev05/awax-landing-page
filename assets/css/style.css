@@ -420,3 +420,87 @@ header {
 .section-team--social a.active {
     background-color: var(--color-principal);
 }
+
+/* SECTION CLIENTS */
+
+.section-clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+.section-clients .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+.section-clients .slide {
+    width: 280px;
+    height: 100%;
+    display: inline-block;
+    width: 700px;
+}
+.section-clients .slidearea {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.section-clients .slider-pointers {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.section-clients .pointer {
+    height: 15px;
+    width: 15px;
+    border: 2px solid var(--color-principal);
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.section-clients .pointer.active {
+    background-color: var(--color-principal);
+}
+.section-client--name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.section-client--function {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.section-client--comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #7F7F7F;
+    margin-top: 20px;
+}
+.section-client--comment span {
+    margin-top: 10px;
+}
+
+/* SECTION BRANDS */
+
+.default.bgcompanie {
+    background-color: #fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 1px solid #CCC;
+    border-right: 0;
+    border-left: 0;
+}
+.section-companies {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* SECTION PRICE */
