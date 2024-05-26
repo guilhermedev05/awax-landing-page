@@ -416,8 +416,7 @@ header {
 .section-team--social a i {
     color: #fff;
 }
-.section-team--social a:hover,
-.section-team--social a.active {
+.section-team--social a:hover {
     background-color: var(--color-principal);
 }
 
@@ -504,3 +503,50 @@ header {
 }
 
 /* SECTION PRICE */
+
+.section-price {
+    display: flex;
+    margin: auto;
+}
+.section-price-area {
+    flex: 1;
+    background-color: #fff;
+    text-align: center;
+    padding: 30px;
+    margin-right: 30px;
+}
+.section-price--type {
+    font-size: 15px;
+    font-weight: 500;
+}
+.section-price--cost {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.section-price--cost span:first-child {
+    font-weight: bold;
+    font-size: 30px;
+}
+.section-price--cost span:last-child {
+    color: #999;
+}
+.section-price--about {
+    margin-top: 20px;
+}
+.section-price--about p {
+    margin: 0;
+    font-size: 12px;
+}
+.section-price--about hr{
+    width: 10px;
+    margin: 10px auto;
+}
+.section-price-area .button{
+    background-color: #333;
+    font-weight: bold;
+    padding: 15px 35px;
+}
+.section-price-area .button:hover {
+    background-color: var(--color-principal);
+}
