@@ -663,5 +663,62 @@ header {
     margin-top: 30px;
 }
 .section-fact:nth-child(odd) p {
-    margin-top: 5px;
+    margin-top: 10px;
+}
+
+/* SECTION SOCIAL */
+
+.default.bgsocial {
+    background-color: #fff;
+    padding: 20px;
+}
+.section-social {
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+    align-items: center;
+}
+
+.section-social .about-us {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    color: #999;
+    margin-right: 50px;
+}
+.about-us img {
+    margin-right: 10px;
+}
+
+.social {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.social a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.social:nth-child(2) a {
+    background-color: #35C4EE;
+}
+.social:nth-child(3) a {
+    background-color: #147CB1;
+}
+.social:nth-child(4) a {
+    background-color: #336296;
+}
+.social:nth-child(5) a {
+    background-color: #E64238;
+}
+.social:nth-child(6) a {
+    background-color: #B81C2A;
 }
