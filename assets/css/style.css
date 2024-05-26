@@ -435,7 +435,6 @@ header {
     height: 100%;
 }
 .section-clients .slide {
-    width: 280px;
     height: 100%;
     display: inline-block;
     width: 700px;
@@ -550,3 +549,83 @@ header {
 .section-price-area .button:hover {
     background-color: var(--color-principal);
 }
+
+/* SECTION PREMIUM */
+
+.default.bgpremium {
+    background-color: #fff;
+}
+.section-premium {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+.section-premium .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+.section-premium .slide {
+    height: 100%;
+    display: inline-flex;
+    width: 1140px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.section-premium .slidearea {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.section-premium .slider-pointers {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.section-premium .pointer {
+    height: 15px;
+    width: 15px;
+    border: 2px solid var(--color-principal);
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.section-premium .pointer.active {
+    background-color: var(--color-principal);
+}
+.section-premium--image {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+.section-premium--about {
+    width: 500px;
+}
+.section-premium .button {
+    margin: auto;
+    margin-top: 30px;
+}
+.about-feature {
+    display: flex;
+    margin-bottom: 20px;
+}
+.section-premium-features .about-feature:last-child {
+    margin-bottom: 0;
+}
+.about-feature img {
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+}
+.feature-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.feature-text {
+    line-height: 25px;
+} 
