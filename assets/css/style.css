@@ -74,6 +74,86 @@ header {
     background-color: var(--color-principal);
     border-radius: 20px;
 }
+
+.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.default .section-title {
+    font-size: 20px;
+}
+.default .section-desc {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #CCC;
+}
+.default .section-body {
+    max-width: var(--max-width);
+    margin: auto;
+}
+.default.light {
+    background-color: #f7f7f7;
+}
+.default.light .section-title,
+.default.light .section-body{
+    color: #000;
+}
+.default.dark {
+    background-color: #000;
+}
+.default.dark .section-title,
+.default.dark .section-body{
+    color: #fff;
+}
+
+.seta {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-principal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 20px;
+    bottom: -5513px;
+}
+
+.seta i {
+    color: #f7f7f7;
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    CSS PARA AREAS ESPECIFICAS DO SITE
+*/
+
+
+/* SECTION ABOUT US */
+
 .banner {
     background-color: #333;
     background-image: url(../images/bg.jpg);
@@ -132,68 +212,6 @@ header {
 .banner .pointer.active {
     background-color: var(--color-principal);
 }
-.default {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.default .section-title,
-.default .section-desc {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.default .section-title {
-    font-size: 20px;
-}
-.default .section-desc {
-    font-size: 12px;
-    margin-top: 10px;
-    margin-bottom: 40px;
-    color: #CCC;
-}
-.default .section-body {
-    max-width: var(--max-width);
-    margin: auto;
-}
-.default.light {
-    background-color: #f7f7f7;
-}
-.default.light .section-title,
-.default.light .section-body{
-    color: #000;
-}
-.default.dark {
-    background-color: #000;
-}
-.default.dark .section-title,
-.default.dark .section-body{
-    color: #fff;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-    CSS PARA AREAS ESPECIFICAS DO SITE
-*/
-
-
-/* SECTION ABOUT US */
-
 .section-aboutus {
     display: flex;
 }
@@ -736,30 +754,33 @@ header {
 .section-contact .button {
     margin-top: 50px;
 }
-form {
+.section-contact form {
     width: 100%;
 }
-form input {
-    padding-bottom: 10px;
+.section-contact form input {
+    padding: 10px 0;
     border: 0;
     border-bottom: 1px solid #999;
+    outline: none;
+    color: #999;
+    font-size: 16px;
 }
-form #input-name {
+.section-contact form #input-name {
     margin-right: 20px;
     width: 48%;
 }
-form #input-email {
+.section-contact form #input-email {
     width: 47.3%;
 }
-form #input-subject {
+.section-contact form #input-subject {
     width: 100%;
     margin-top: 20px;
 }
-form #input-message {
+.section-contact form #input-message {
     width: 100%;
     margin-top: 60px; 
 }
-form input::placeholder {
+.section-contact form input::placeholder {
     text-transform: uppercase;
     font-family: 'Montserrat';
 }
@@ -804,4 +825,81 @@ form input::placeholder {
 .section-map--info-item-img img {
     width: 15px;
     height: auto;
+}
+
+/* FOOTER AREA */
+
+.footer-area {
+    display: flex;
+}
+.footer-social,
+.footer-text,
+.footer-subscribe {
+    flex: 1;
+}
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+.footer-social-itens {
+    display: flex;
+}
+.footer-social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #535353;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.footer-social-item:hover {
+    background-color: var(--color-principal);
+}
+.footer-social a i {
+    color: #fff;
+    font-size: 15px;
+}
+.footer-text {
+    color: #999;
+    line-height: 22px;
+}
+.footer-subscribe {
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+}
+.footer-subscribe-area {
+    background-color: #535353;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    padding: 30px;
+    width: 80%;
+    border-radius: 5px;
+}
+.footer-subscribe-area form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.footer-subscribe-area input {
+    text-align: center;
+    padding: 10px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    color: #999;
+}
+.footer-subscribe-area input::placeholder {
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    color: #999;
 }
