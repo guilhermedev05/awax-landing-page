@@ -116,24 +116,6 @@ header {
     color: #fff;
 }
 
-.seta {
-    width: 50px;
-    height: 50px;
-    background-color: var(--color-principal);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 20px;
-    bottom: -5513px;
-}
-
-.seta i {
-    color: #f7f7f7;
-    font-size: 35px;
-}
-
 
 
 
@@ -272,6 +254,7 @@ header {
     border-radius: 30px;
     display: inline-block;
     padding: 0 20px;
+    margin: 0 30px;
     background-color: #EEE;
 }
 .section-projects--filters ul,
@@ -280,7 +263,7 @@ header {
 }
 .section-projects--filters ul {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 .section-projects--filters li {
     display: inline-block;
@@ -310,6 +293,8 @@ header {
 }
 .section-projects--photo {
     width: 280px;
+    display: flex;
+    justify-content: center;
 }
 .section-projects--photoarea {
     margin: 20px;
@@ -450,6 +435,7 @@ header {
     text-align: center;
     max-width: 700px;
     margin: auto;
+    overflow: hidden;
 }
 .section-clients .sliders {
     width: 1000vw;
@@ -505,6 +491,7 @@ header {
 }
 .section-client--comment span {
     margin-top: 10px;
+    text-align: justify;
 }
 
 /* SECTION BRANDS */
@@ -519,7 +506,11 @@ header {
 }
 .section-companies {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.section-companies .section-companie {
+    flex: 1;
+    text-align: center;
 }
 
 /* SECTION PRICE */
@@ -534,6 +525,9 @@ header {
     text-align: center;
     padding: 30px;
     margin-right: 30px;
+}
+.section-price-area:first-child {
+    margin-left: 30px;
 }
 .section-price--type {
     font-size: 15px;
@@ -580,6 +574,7 @@ header {
     display: flex;
     margin: auto;
     flex-direction: column;
+    overflow: hidden;
 }
 .section-premium .sliders {
     width: 1000vw;
@@ -692,7 +687,7 @@ header {
 .default.bgsocial {
     background-color: #fff;
     padding: 20px;
-    border-bottom: 1px solid #999;
+    border-bottom: 2px solid #999;
 }
 .section-social {
     display: flex;
@@ -766,6 +761,7 @@ header {
 }
 .section-contact form input {
     padding: 10px 0;
+    background-color: #f7f7f7;
     border: 0;
     border-bottom: 1px solid #999;
     outline: none;
@@ -842,6 +838,7 @@ header {
 
 /* FOOTER AREA */
 
+
 .footer-area {
     display: flex;
 }
@@ -854,7 +851,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 30px;
 }
 .footer-social-itens {
     display: flex;
@@ -880,11 +876,8 @@ header {
 .footer-text {
     color: #999;
     line-height: 22px;
-}
-.footer-subscribe {
-    margin-right: 0;
-    display: flex;
-    justify-content: center;
+    margin-right: 30px;
+    text-align: justify;
 }
 .footer-subscribe-area {
     background-color: #535353;
@@ -893,7 +886,6 @@ header {
     align-items: center;
     justify-content:center;
     padding: 30px;
-    width: 80%;
     border-radius: 5px;
 }
 .footer-subscribe-area form {
@@ -915,6 +907,11 @@ header {
     text-transform: uppercase;
     font-family: 'Montserrat';
     color: #999;
+    font-size: 12px;
+    font-weight: 600;
+}
+.copy-mob {
+    display: none;
 }
 
 @media (min-width:450px) and (max-width: 800px) {
@@ -977,6 +974,10 @@ header {
     .section-team {
         max-width: 580px;
     }
+    .section-companies .section-companie {
+        min-width: 50%;
+        margin-bottom: 20px;
+    }
     .section-client--comment span{
         width: 90vw;
         font-size: 17px;
@@ -993,18 +994,18 @@ header {
     }
     .section-price--cost span:first-child {
         font-weight: bold;
-        font-size: 40px;
+        font-size: 36px;
     }
     .section-price--cost span:last-child {
-        font-size: 22px;
+        font-size: 17px;
     }
     .section-price--type {
-        font-size: 23px;
+        font-size: 20px;
         font-weight: 500;
     }
     .section-price--about p {
         margin: 0;
-        font-size: 17px
+        font-size: 16px
     }
     .section-premium .slidearea {
         flex-direction: column;
@@ -1057,6 +1058,192 @@ header {
         margin-left: 30px;
     }
     .footer-area {
+        padding: 0 20px;
+    }
+    .copy-tab {
+        font-weight: 600;
+    }
+    .footer-text {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    .logo {
+        margin-left: 30px;
+    }
+    .menu-opener {
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 99;
+        width: 70vw;
+        height: calc(100vh - 100px);
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li a {
+        font-weight: bold;
+        height: 60px;
+        font-size: 20px;
+        margin-left: 30px;
+        border: 0;
+    }
+    .menu li a.active{
+        border: 0;
+        color: var(--color-principal);
+    }
+    .banner h1 {
+        font-size: 30px;
+    }
+    .banner h2 {
+        font-size: 18px;
+    }
+    .section-aboutus {
+        flex-direction: column;
+    }
+    .section-aboutus--left {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .section-aboutus--right {
+        margin-right: 30px;
+        margin-left: 30px;
+        width: auto;
+    }
+    .section-aboutus--right img {
+        width: 100%;
+    }
+    .section-services {
+        flex-wrap: wrap;
+    }
+    .section-service {
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+    .section-service:first-child {
+        border-left: 0;
+    }
+    .section-team {
+        max-width: 280px;
+    }
+    .section-companies {
+        flex-wrap: wrap;
+    }
+    .section-companies .section-companie {
+        min-width: 50%;
+        margin-bottom: 20px;
+    }
+    .section-client--comment span{
+        width: 80vw;
+        font-size: 17px;
+    }
+    .section-price {
+        flex-direction: column;
+    }
+    .section-price-area {
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+    .section-price-area:nth-child(3) {
+        display: none;
+    }
+    .section-price--cost span:first-child {
+        font-weight: bold;
+        font-size: 36px;
+    }
+    .section-price--cost span:last-child {
+        font-size: 17px;
+    }
+    .section-price--type {
+        font-size: 23px;
+        font-weight: 500;
+    }
+    .section-price--about p {
+        margin: 0;
+        font-size: 16px
+    }
+    .section-premium .slidearea {
+        flex-direction: column;
+    }
+    .section-premium--about {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .section-premium--image {
+        width: 100%;
+    }
+    .section-premium--image img {
+        width: 50%;
+    }
+    .about-feature {
+        padding: 0 50px;
+    }
+    .section-facts {
+        flex-direction: column;
+    }
+    .section-fact {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .section-social {
+        flex-direction: column;
+        align-items: center;
+    }
+    .media-social {
+        display: flex;
+    }
+    .media-social .social {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+    }
+    .media-social .social:first-child{
+        margin-left: 10px;
+    }
+    .section-social .about-us {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .about-us img {
+        display: none;
+    }
+    .section-contact {
+        padding: 0 30px;
+    }
+    .section-contact form #input-name,
+    .section-contact form #input-email {
+        margin-right: 0;
+        width: 100%;
+    }
+    .section-contact form input,
+    .section-contact form #input-message {
+        margin-top: 20px;
+    }
+    .section-map {
+        padding: 0;
+        padding-bottom: 200px;
+    }
+    .section-map--info {
+        width: auto;
+    }
+    .footer {
+        padding: 30px 30px;
+    }
+    .footer-area {
         flex-direction: column;
     }
     .footer-social {
@@ -1068,16 +1255,16 @@ header {
         margin: 30px 0;
     }
     .footer-text {
-        width: 90%;
-        margin: auto;
+        width: 100%;
     }
-    .desable-mob {
+    .copy-tab {
         display: none;
+    }
+    .copy-mob {
+        order: 4;
+        text-align: center;
     }
     .footer-text {
         order: 3;
-    }
-    .seta {
-        display: none;
     }
 }
